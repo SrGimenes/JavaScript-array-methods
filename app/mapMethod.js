@@ -6,3 +6,13 @@ function aplicarDesconto(livros)
     })
     return livrosDesconto;
 }
+
+// const numeros = [2,4,6,8]
+// function dobrarValor(numeros)
+// {
+//  const multiplicador = 2
+//  valorDobrado = numeros.map(i => {
+//     return {...i, i: i.i * (multiplicador)}
+//  })
+// }
+// console.log(dobrarValor)

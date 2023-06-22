@@ -6,6 +6,6 @@ function bookFilter()
 {
     const btnElement = document.getElementById(this.id)
     const category = btnElement.value
-    let filteredBooks = livros.filter(livro => livro.categoria == category)
+    let filteredBooks = category == 'disponivel' ?  livros.filter(livro => livro.quantidade > 0) : livros.filter(livro => livro.categoria == category)
     exibirOsLivrosNaTela(filteredBooks)
 }
